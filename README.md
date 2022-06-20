@@ -1,4 +1,6 @@
-# Redirecting-the-scene
+### EX NO:07
+### DATE:
+# <p align="center"> Redirecting-the-scene</p>                  
 
 ## Aim:
 To Redirecting the scene in the unity engine.
@@ -29,19 +31,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
 public class PlayerController : MonoBehaviour
 {
     Rigidbody rb;
     public GameObject WinText;
-
-    // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
     }
-
-    // Update is called once per frame
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.R))
@@ -62,16 +59,16 @@ public class PlayerController : MonoBehaviour
           Destroy(collision.gameObject);
             WinText.SetActive(true);
         }
-    }
+}
 }
 
 ```
 ## Output:
 ## After the Ball hit the cube:
-![image](https://user-images.githubusercontent.com/94164665/174268726-a97d9ced-f440-4005-93c2-5b5676285766.png)
+![1](https://user-images.githubusercontent.com/75235477/174622332-2e1d3a44-1c75-4e8f-ac9c-43b298e7da01.png)
 
 ## Redirected scene:
-![image](https://user-images.githubusercontent.com/94164665/174268595-c2197ae7-6504-4aaa-86c2-6b222fd4cd7a.png)
+![174268595-c2197ae7-6504-4aaa-86c2-6b222fd4cd7a](https://user-images.githubusercontent.com/75235477/174622360-627c737b-7274-4947-a181-0e0f1b464e83.png)
 
 
 ## Result:
